@@ -1,0 +1,46 @@
+1.  Inicio
+2.  funcion principal()
+3.  	valor1, d[0-n]
+4.  	valor2, d[0-n]
+5.  	valor3, d[0-n]
+6.  	valor4, d[0-n]
+7.  	resultado, d[0-n]
+8.  	mensaje x(500)[{A-Z} , {a-z} , {BS} , {0-9}]
+
+9.  	<< "Ingrese el primer valor:"
+10. 	>> valor1
+11. 	<< "Ingrese el segundo valor:"
+12. 	>> valor2
+13. 	<< "Ingrese el tercer valor:"
+14. 	>> valor3
+15. 	<< "Ingrese el cuarto valor:"
+16. 	>> valor4
+
+17. 	resultado <-- obtener_promedio(valor1,valor2,valor3,valor4)
+18. 	Si resultado >= 0 && resultado <= 5 entonces
+19. 		mensaje <-- "Regular"
+20. 	De lo contrario
+21. 		Si resultado > 5 && resultado <= 8 entonces
+22. 			mensaje <-- "Bueno"
+23. 		De lo contrario
+24. 			Si resultado > 8 && resultado <= 9 entocnes
+25. 				mensaje <-- "Muy Bueno"
+26. 			De lo contrario
+27. 				Si resultado > 9 && resultado <= 10 entonces
+28. 					mensaje <-- "Sobresaliente"
+29. 				Fin Si
+30. 			Fin Si
+31. 		Fin Si
+32. 	Fin Si
+
+33. 	<< "El promedio de las notas: " + valor1 + ", " + valor2 + ", " + valor3 + ", " + valor4 + ", " + "es " + mensaje
+34. Fin funcion principal
+
+35. funcion obtener_promedio(valor1,d;valor2,d;valor3,d;valor4,d):d
+36. 	suma, d[0-n]
+37. 	promedio, d[0-n]
+38. 	suma <-- valor1+valor2+valor3+valor4
+39. 	promedio <-- suma/4
+40. 	retornar promedio
+41. Fin obtener_promedio
+42. Fin

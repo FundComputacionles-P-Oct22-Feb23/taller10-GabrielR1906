@@ -1,0 +1,55 @@
+1.  Inicio
+2.  funcion principal()
+3.  	lado, d[0-n]
+4.  	altura, d [0-n]
+5.  	base, d[0-n]
+6.  	opcion, i[0-n]
+7.  	area, d[0-n]
+
+8.  	<< "Ingrese el número 1 para obtener el área del  cuadrado; 2 para obtener el área del triángulo; 3 para
+9.  	    obtener el área del rectángulo"
+10. 	>> opcion
+
+11. 	Si opcion == 1 entonces
+12. 		<< "Ingrese el valor de uno de sus lados"
+13. 		>> lado
+14. 		respuesta <-- obtenerAreaCuadrado(lado)
+15. 	De lo contrario
+16. 		Si opcion == 2 entonces
+17. 			<< "Ingrese la base"
+18. 			>> base
+19. 			<< "Ingrese la altura"
+20. 			>> altura
+21. 			respuesta <-- obtenerAreaTriangulo(base, altura)
+22. 		De lo contrario
+23. 			Si opcion == 3 entonces
+24. 				<< "Ingrese el valor de la base"
+25. 				>> base
+26. 				<< "Ingrese el valor de la altura"
+27. 				>> altura
+28. 				respuesta <-- obtenerAreaRectangulo(base, altura)
+29. 			De lo contrario
+30. 				<< "Error - Número ingresado no válido"
+31. 			Fin Si
+32. 		Fin Si
+33. 	Fin Si
+
+34. 	<< respuesta
+35. Fin funcion principal
+
+36. funcion obtenerAreaCuadrado(lado, d):d
+37. 	area <-- lado * lado * lado * lado
+38. 	retorno area
+39. Fin obtenerAreaCuadrado
+
+40. funcion obtenerAreaTriangulo(base,d;altura,d):d
+41. 	area <-- (base * altura) / 2
+42. 	retorno area
+43. Fin obtenerAreaTriangulo
+
+44. funcion obtenerAreaRectangulo(base,d;altura,d):d
+45. 	area <-- base * altura
+46. 	retorno area
+47. Fin obtenerAreaRectangulo
+
+48. Fin
